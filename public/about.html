@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="about">
+            <div id="head1">
+                <p>
+                   <b>Hello Everyone 
+                    <br>This is an online test web application.
+                    <br>It takes MCQ quiz.
+                    </b>
+                </p>
+                <p>
+                    <b>Share your Feedback</b>
+                </p>
+            </div>
+            <div id=formdiv>
+                <form action="/sendFeed" method="POST">
+                    <div>
+                        <textarea name="mdg" id="" cols="30" rows="10" placeholder="Your Message...." class="inp"></textarea>
+
+                    </div>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="inp">
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder=" eg: xyz@abc.com" class="inp">
+                    </div>
+                    <div>
+                        <input type="submit" value="Send Feedback" id="sbtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

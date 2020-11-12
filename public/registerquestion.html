@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Questions</title>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="/css/questions.css">
+</head>
+<body>
+    <div class="question-container">
+        <div class="nav-question-data">
+            <div class="heading-bar">
+                <p>Please Add Questions</p>
+            </div>
+            <div class="question-count">
+                <div class="display-total-q">
+                    <input type="text" name="total-q" id="total-q" disabled value="0" hidden>
+                </div>
+            </div>
+        </div>
+        <div class="body-question-data">
+            
+            <div class="hidden-q" hidden >
+                <div class="question-para">
+                    <h1>Question No.</h1>
+                    <textarea  cols="100" rows="10" placeholder="Your Question.." ></textarea>    
+                </div>
+                <div class="option-para">
+                    <div class="option-q">
+                        <input type="text"  placeholder="option 1" >
+                    </div>
+                    <div class="option-q">
+                        <input type="text"  placeholder="option 2">
+                    </div>
+                    <div class="option-q">
+                        <input type="text"  placeholder="option 3">
+                    </div>
+                    <div class="option-q">
+                        <input type="text"  placeholder="option 4">
+                    </div>
+                </div>
+            </div>
+            <form action="/addquestions" method="post">
+                <div class="question-data">
+                
+                </div>
+                <div class="addquestion-btn">
+                    <input type="submit" value="Register Question & Submit" id="questionaddbtn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="loadquestionfield.js"></script>
+</body>
+</html>

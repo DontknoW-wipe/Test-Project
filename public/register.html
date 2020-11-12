@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="registernav">
+
+    </div>
+    <div class="registerbody">
+        <div>
+            <h1>Register Form</h1>
+        </div>
+        <div id="alertemailsent">
+            <label >
+                Verification Code has been sent to your email.
+            </label>
+        </div>
+        <div>
+            <div class="formdiv">
+                <form action="/register" method="POST">
+                    
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">Full Name</label>
+                                </td>
+                                <td><input type="text" name="fname" id="name" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                                <td><input type="email" name="email" id="email" required></td>                            
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="mobileno">Mobile No.</label>
+                                </td>
+                                <td><input type="number" name="mno" id="mobileno" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="schoolname">School or Institution Name</label>
+                                </td>
+                                <td><input type="text" name="schoolname" id="schoolname" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="timing">Test Duration <small>( in minutes )</small></label>
+                                </td>
+                                <td><input type="number" name="timing" id="timing" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="testdate">Test Date</label>
+                                </td>
+                                <td><input type="date" name="testdate" id="testdate" required></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="teststart">Test Start at</label>
+                                </td>
+                                <td>
+                                    <input type="time" name="teststart" id="teststart" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="totalquestion">Total Number of questions</label>
+                                </td>
+                                <td>
+                                    <input type="number" name="totalquestion" id="totalquestion" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="verifycode" placeholder="VERIFICATION CODE" id="verifycodeinput" hidden>
+                                </td>
+                                <td><input type="button" value="Verify Email" id="verifycodebtn" hidden>
+                                    <input type="button" value="Verify Email" id="emailbtn"></td>
+                                
+                                
+
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td><input type="submit" value="Register" id="registerbtn" disabled></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="process.js"></script>
+    
+</body>
+</html>

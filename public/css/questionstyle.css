@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);
+}
+
+#qhead{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 90%;
+    z-index: 1;
+    background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);
+    border-bottom: 2px groove white;
+}
+#qbody{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    border-top: 2px groove white;
+    background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);
+}
+#qno{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 90%;
+    bottom: 0;
+    overflow: auto;
+    border-right: 3px groove white;
+    
+
+}
+#qno a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 30px;
+    margin: 0;
+    padding-left: 25px;
+    color: black;
+    transition: 0.5s;
+}
+#qno a:hover{
+    background-color: #13a0c4;
+    color: white;
+    font-size: 28px;
+}
+
+
+#questions{
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 0%;
+    bottom: 0;
+    overflow: auto;   
+}
+.questionpart{
+    position: relative;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    padding: 4px;
+    overflow: auto;
+    border-bottom: 2px groove white;
+}
+.questionNopart{
+    margin-left: 30px;
+    height: 5%;
+}
+.questionNopart h2{
+    font-size: 25px;
+}
+.questionQ{
+    margin-left: 30px;
+    
+}
+.questionQ p{
+    font-size: 25px;
+}
+.questionOption{
+    margin-left: 30px;
+    height: 40%;
+    border-radius: 5px;
+}
+.questionOption p{
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.questionOption p:hover{
+    background-color: #13a0c4;
+    color: white;
+    font-size: 27px;
+}
+.questionOption p input{
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+#timer1{
+    width: 350px; 
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 55px;
+    border-radius: 10px; 
+    display: inline-block;  
+}
+#timer{
+
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 800;
+
+}
+#Name{
+    border: none;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 55px;
+    border-radius: 10px; 
+    display: inline-block;
+}
+#stname{
+
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 800;
+}
+#finishbtn{ 
+    border: none;
+    width: 350px;
+    margin-top: 20px;
+    margin-right: 15px;
+    height: 55px;
+    border-radius: 10px; 
+    float: right;
+
+}
+#fbtn{    
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    height: 55px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    background-color: royalblue;
+    cursor: pointer;
+}
+#popup{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color:rgb(179, 162, 162);
+    z-index: 2;
+}
+#center{
+    margin: 10% auto;
+    margin-top: 300px;
+    width: 500px;
+    height: 200px;
+    border: none;
+    border-radius: 30px;
+
+}
+#center div{
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+    margin: 15px;
+    left: 15px;
+    margin-top: 80px;
+
+}
+#center div input{
+    width: 200px;
+    height: 50px;
+   border-radius: 5px;
+   font-size: 25px;
+   font-weight: 800;    
+   border: 1px dotted rgb(167, 150, 150);
+   cursor: pointer;
+   transition: 0.2s;
+   background-color: rgb(18, 233, 18);
+   color: white;
+}
+#center div input:hover{
+    background-color: red;
+    width: 195px;
+    font-size: 20px;
+    border: 1px dotted rgb(167, 150, 150);
+}
+
+
+
+#fullscreenpopup{
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color:rgb(179, 162, 162);
+    z-index: 2;
+}
+#fcenter{
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+
+}
+#fcenter div{
+    width: 300px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 80px;
+
+}
+#fcenter div input{
+    width: 300px;
+    height: 50px;
+   border-radius: 5px;
+   font-size: 25px;
+   font-weight: 800;    
+   border: 1px dotted rgb(167, 150, 150);
+   cursor: pointer;
+   transition: 0.2s;
+   background-color: rgb(18, 233, 18);
+   color: white;
+}
+#fcenter div input:hover{
+    width: 310px;
+    font-size: 27px;
+    border: 1px dotted rgb(167, 150, 150);
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Test</title>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="css/questionstyle.css">
+</head>
+<body>
+<form action="/submitAnswer" method="POST" id="form">
+      
+    <div id="popup">
+        <div id="center">
+            <div>
+                <input type="submit" value="Submit Test">
+            </div>
+            <div>
+                <input type="button" value="Back to Test" onclick="document.getElementById('popup').style.display='none';">
+            </div>
+        </div>
+    </div>
+    <div id="fullscreenpopup">
+        <div id="fcenter">
+            
+            <div>
+                <input type="button" value="Enable Full Screen" onclick="start1();">
+            </div>
+        </div>
+    </div>
+    <div id="qhead" >
+
+        <div id="timer1">
+            <p id="timer">00:00:00</p>
+        </div>
+        <div id="Name">
+            <p id="stname"><b>Name : </b>Student Name</p>
+        </div>
+        <div id="finishbtn">
+            <input type="button" onclick="document.getElementById('popup').style.display='block';" id="fbtn" value="Finish Test">
+        </div>
+    </div>
+    <div id="qbody" >
+        <div id="qno">
+
+        </div>
+            <div id="questions">
+
+            </div>
+    </div>
+</form>
+    <script src="loadq.js"></script>
+    
+    
+</body>
+</html>

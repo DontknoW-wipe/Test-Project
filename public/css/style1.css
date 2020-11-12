@@ -1,0 +1,105 @@
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);
+
+        }
+        
+        .container{
+            width: 100%;
+            height: auto;
+
+        }
+        nav{
+            margin: 0px;
+            width: auto;
+            height: 70px;
+            background-image: linear-gradient(to right,#2bc0e4 100%,#adada6 0%,#2bc0e4 0%);
+            border: 1px dotted blue;
+            border-image:linear-gradient(to left,blue,transparent);
+        }
+        #logo_bar{
+            margin-left: 40px;
+            float: left;
+            height: 45px;
+            padding: 4px;
+        }
+        #nav_bar{
+            margin-right: 30px;
+            float: right;
+            height: 45px;
+            padding: 4px;
+        }
+        #logo_bar a, #nav_bar a{
+            text-decoration: none;
+            color: black;
+            font-size: 28px;
+            margin-left: 8px;
+        }
+        #nav_bar a button{
+            width: 100px;
+            margin-top: 3px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(128, 7, 7);
+            color: white;
+            font-size: 19px;
+        }
+        #nav_bar a button:hover{
+            cursor: pointer;
+        }
+        #fillbanner{
+            margin: 0px;
+            width: auto;
+            height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right,#2bc0e4 50%,transparent);
+            border: none;
+            border-top: 2px groove white;
+            border-bottom: 2px groove white;
+        }
+        #fillbanner h1{
+            color: white;
+            margin: 0px;
+            font-size: 29px;
+        }
+        #filldetails{
+            margin: 0px;
+            padding-top: 30px;
+            padding-left: 400px;
+            padding-bottom: 15px;
+            width: auto;
+            text-align: center;
+        }
+        td{
+            font-size: 20px;
+            padding: 8px;
+        }
+        .input122{
+            height: 32px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        #btn1{
+            width: 250px;
+            height: 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0e9cc0;
+            color: white;
+        }
+        #btn1:hover{
+            cursor: pointer;
+        }
+        footer{
+            width: auto;
+            background-color: black;
+            color: white;
+            margin-bottom: 0px;
+        }

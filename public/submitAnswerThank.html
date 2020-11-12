@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <script src="jquery3.js"></script>
+    <link rel="stylesheet" href="css/th.css">
+</head>
+<body>
+    <div class="container">
+        <div class="msg">
+            <h1>
+                Your Test is submitted successfully.
+            </h1>
+            <h1>
+                Thank You
+            </h1>
+            <h1>
+                <a href="/">Click Here For HomePage</a><b> OR</b>
+            </h1>
+            <h1>
+                You will redirect to HomePage in <span id="counterq">0 sec.</span>
+            </h1>
+        </div>
+    </div>
+    <script>
+        var count=59;
+        setInterval(fun1,1000);
+        function fun1()
+        {
+            document.getElementById('counterq').innerHTML=count+ " sec.";
+            count--;
+            if(count==-1)
+            {
+                window.location.href=window.location.protocol+"//"+window.location.host;
+            }
+        }
+    </script>
+</body>
+</html>

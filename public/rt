@@ -1,0 +1,80 @@
+
+<script>
+        var element=document.documentElement;
+        
+        function openfull(){
+            if(element.requestFullscreen){
+                element.requestFullscreen();
+            }
+        }
+        function closefull(){
+            if(document.exitFullscreen){
+                document.exitFullscreen();
+            }
+        }
+        openfull();
+        
+    </script>
+
+                <button class="qbtn"><a href="#q1">Question 01</a></button>
+            <button class="qbtn"><a href="#q2">Question 02</a></button>
+            <button class="qbtn"><a href="#q3">Question 03</a></button>
+            <button class="qbtn"><a href="#q4">Question 04</a></button>
+            <button class="qbtn"><a href="#q5">Question 05</a></button>
+            <button class="qbtn"><a href="#q6">Question 06</a></button>
+            <button class="qbtn"><a href="#q7">Question 07</a></button>
+            <button class="qbtn"><a href="#q8">Question 08</a></button>
+            <button class="qbtn"><a href="#q1">Question 01</a></button>
+            <button class="qbtn"><a href="#q2">Question 02</a></button>
+            <button class="qbtn"><a href="#q3">Question 03</a></button>
+            <button class="qbtn"><a href="#q4">Question 04</a></button>
+            <button class="qbtn"><a href="#q5">Question 05</a></button>
+            <button class="qbtn"><a href="#q6">Question 06</a></button>
+            <button class="qbtn"><a href="#q7">Question 07</a></button>
+            <button class="qbtn"><a href="#q8">Question 08</a></button>
+            <div id="q1" class="questionpart">
+                <div id="questionNo" class="questionNopart">
+                    <h2>Question 1</h2>
+                </div>
+                <div id="q1Q" class="questionQ">
+                    <p>fhewjfhefjefnejnf</p>
+                </div>
+                <div id="q1Option" class="questionOption">
+                    <label><p><input type="radio" name="q1Answer">A</p></label>
+                    <label><p><input type="radio" name="q1Answer">B</p></label>
+                    <label><p><input type="radio" name="q1Answer">C</p></label>
+                    <label><p><input type="radio" name="q1Answer">D</p></label>
+
+                </div>
+            </div>
+            <hr>
+            <div id="q2" class="questionpart">
+                <div id="questionNo" class="questionNopart">
+                    <h2>Question 2</h2>
+                </div>
+                <div id="q2Q" class="questionQ"> 
+                    <p>fhewjfhefjefnejnf</p>
+                </div>
+                <div id="q2Option" class="questionOption">
+                    <label><p><input type="radio" name="q1Answer">A</p></label>
+                    <label><p><input type="radio" name="q1Answer">B</p></label>
+                    <label><p><input type="radio" name="q1Answer">C</p></label>
+                    <label><p><input type="radio" name="q1Answer">D</p></label>
+                </div>
+            </div>
+            <hr>
+            <div id="q3" class="questionpart">
+                <div id="questionNo" class="questionNopart">
+                    <h2>Question 3</h2>
+                </div>
+                <div id="q3Q" class="questionQ">
+                    <p>fhewjfhefjefnejnf</p>
+                </div>
+                <div id="q3Option" class="questionOption">
+                    <label><p><input type="radio" name="q1Answer">A</p></label>
+                    <label><p><input type="radio" name="q1Answer">B</p></label>
+                    <label><p><input type="radio" name="q1Answer">C</p></label>
+                    <label><p><input type="radio" name="q1Answer">D</p></label>
+                    
+                </div>
+            </div>
