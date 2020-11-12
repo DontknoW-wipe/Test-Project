@@ -7,7 +7,6 @@ const path=require('path');
 const routes = require('./routes/routes');
 
 const app=express(); 
-app.set("view engine","ejs");
 
 //ENVIROMENT 
 const TWO_HOURS=1000*60*60*2;
@@ -67,7 +66,7 @@ console.log("Mongoose connected");
 app.use('/', routes);
 
 //LISTEN ON PORT SETTINGS.....
-http.listen(port,'0.0.0.0',function(){
+http.listen(port,function(){
 	console.log(`http://localhost:${port}`);
 	
 });
