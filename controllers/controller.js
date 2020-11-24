@@ -41,12 +41,11 @@ exports.postlogin=function(req,res){
                 //res.redirect('/studentform');
                 //console.log(data);
                //console.log(typeof(data));
-               var g=`
+               /*var g=`
                <script>
-               window.location.href="/";
-                 window.open('http://localhost:3000/studentform','xyz','height=720,width=1500');
+                 window.open('http://localhost:3300/studentform','xyz','height=720,width=1500');
                 </script>
-               `;
+               `;*/
                res.redirect('/studentform');
                 //res.send(g);
             }

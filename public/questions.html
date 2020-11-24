@@ -49,7 +49,22 @@
     </div>
 </form>
     <script src="loadq.js"></script>
-    
+    <script>
+        var flag=0;
+        document.addEventListener('visibilitychange',function(){
+            if(flag<=2)
+            {
+                flag++;
+            }
+        });
+        setInterval(function()
+        {
+            if(flag==3)
+            {
+                document.getElementById('form').submit();
+            }
+        },1000);
+    </script>
     
 </body>
 </html>
