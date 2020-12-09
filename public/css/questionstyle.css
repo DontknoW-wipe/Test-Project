@@ -7,9 +7,9 @@ body{
     top: 0;
     bottom: 0;
     z-index: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-    background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);
+   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    */box-sizing: border-box;
+    /*background-image: linear-gradient(to right,#2bc0e4 100%,#8fe3fd 0%,#2bc0e4 100%);*/
 }
 
 #qhead{
@@ -48,7 +48,7 @@ body{
     flex-direction: row;
     text-decoration: none;
     line-height: 70px;
-    font-size: 30px;
+    font-size: 26px;
     margin: 0;
     padding-left: 25px;
     color: black;
@@ -149,22 +149,24 @@ body{
 #finishbtn{ 
     border: none;
     width: 350px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 15px;
     height: 55px;
     border-radius: 10px; 
-    float: right;
-
+    position: absolute;
+    right: 35px;
+    top: 5px;
+    
 }
 #fbtn{    
     font-size: 40px;
     text-align: center;
     font-weight: 800;
     height: 55px;
-    width: 350px;
+    width: 300px;
     border: none;
     border-radius: 10px;
-    background-color: royalblue;
+    background-color: rgb(108, 65, 225);
     cursor: pointer;
 }
 #popup{
