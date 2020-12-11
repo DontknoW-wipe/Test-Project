@@ -431,3 +431,9 @@ exports.postaddquestions=function(req,res){
     `;
     res.send(msg);
 };
+
+exports.sendfeed=function(req,res){
+    var feedData=req.body;
+    console.log(feedData);
+    res.redirect('/');
+};

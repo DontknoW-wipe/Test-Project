@@ -35,7 +35,7 @@ app.use(session({
 }));
 
 //HTTP SERVER...
-const http = require("http").Server(app);
+//const http = require("http").Server(app);
 const port = process.env.PORT || 3300;
 
 const publicPath=path.join(__dirname,'/public');
@@ -66,7 +66,7 @@ console.log("Mongoose connected");
 app.use('/', routes);
 
 //LISTEN ON PORT SETTINGS.....
-http.listen(port,function(){
+app.listen(port,function(){
 	console.log(`http://localhost:${port}`);
 	
 });

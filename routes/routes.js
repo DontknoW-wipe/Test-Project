@@ -19,6 +19,7 @@ router.get('/timerecieve',controller.timeR);
 router.get('/addquestions',controller.addquestions);
 router.post('/addquestions',controller.postaddquestions);
 router.post('/email/verification',controller.emailverify);
+router.post('/sendFeed',controller.sendfeed);
 router.post('/email/verification/d',controller.emailverifyd);
 router.get('/noofquestions',controller.sendquestionno);
 module.exports = router;
