@@ -3,3 +3,5 @@
  and go to page no. 301 and change the email id
  page no. 302 to change password and page no. 308 for email id.
  
+To run project use command
+>> node app.js
