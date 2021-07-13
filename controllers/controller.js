@@ -21,9 +21,11 @@ function generateid(){
     }
     return s1;
 }
+
 exports.gethome=function(req,res){
     res.redirect('/');
 };
+
 exports.postlogin=function(req,res){
     const { SESSION_CODE,userId,tquestion,idused ,SutD,RutD,pass1}=req.session;
     var testcode= String(req.body.test_code) ;
@@ -177,6 +179,7 @@ exports.timeR=function(req,res){
         }
     });
 };
+
 exports.answersheet=function(req,res){
     var r=req.body;
     let info=new SubmitAnswers();
@@ -218,6 +221,7 @@ exports.getregister=function(req,res){
         }
     });
 };
+
 
 exports.postregister=function(req,res){
     
@@ -293,8 +297,8 @@ function generatecodeforemail(){
 
 function mailcheckatstart(emailid1)
 {
-        var mailerkar=require('nodemailer');
-
+    // SEND MAIL 
+    var mailerkar=require('nodemailer');
     var trans=mailerkar.createTransport({
         service:'gmail',
         auth:{

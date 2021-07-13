@@ -34,16 +34,18 @@ app.use(session({
 	}
 }));
 
-//HTTP SERVER...
-//const http = require("http").Server(app);
+//PORT
 const port = process.env.PORT || 3300;
 
+//PATH
 const publicPath=path.join(__dirname,'/public');
 app.use(express.static(publicPath));
 
 //BODY-PARSER......
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
+
 app.use(express.static('public'));
 
 
