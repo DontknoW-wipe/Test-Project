@@ -302,14 +302,14 @@ function mailcheckatstart(emailid1)
     var trans=mailerkar.createTransport({
         service:'gmail',
         auth:{
-            user:'kamalzero167@gmail.com',
-            pass:'iamkamalnk'
+            user:'xyz@gmail.com',
+            pass:'password'
         }
     });
     verifycode1=generatecodeforemail();
     console.log("Email code : "+verifycode1);
     var mailopt={
-        from:'kamalzero167@gmail.com',
+        from:'xyz@gmail.com',
         to:emailid1,
         subject:'Your verification Code',
         html:'<h1>Your verification Code is '+verifycode1+'</h1>'
